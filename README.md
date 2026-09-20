@@ -82,6 +82,10 @@ Di Langflow: **Settings → Global Variables → Add New**, buat dua variabel:
 Kemudian di flow, pastikan komponen **Astra DB** (ingest dan search) menunjuk
 **endpoint & database milik Anda** (bagian ini sengaja dibersihkan dari file JSON).
 
+> Juga cek komponen **Language Model** dan **Embeddings**: field *API Key* di file
+> JSON berupa placeholder `GANTI-DENGAN-GOOGLE-API-KEY-KAMU` — klik field-nya,
+> lalu pilih global variable `GOOGLE_API_KEY` (atau paste API key langsung).
+
 ### 5. Ingest data perkara
 
 1. Buka flow → komponen **Read File** → upload `data/kecil01.txt`
